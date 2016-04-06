@@ -10,6 +10,9 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 		class="com.tutorialspoint.HelloWorld" 
 		init-method = "init" destroy-method = "destroy">
 	</bean>
-	 <bean class="com.tutorialspoint.InitHelloWorld" />
-
+	<bean class="com.tutorialspoint.InitHelloWorld"></bean>
+	<bean id="HelloIndiaBean" 
+		class="com.tutorialspoint.HelloIndia" parent = "HelloWorldBean">
+		<property name="message3" value = "Hello India MSG3!"></property>
+	</bean>
 </beans>

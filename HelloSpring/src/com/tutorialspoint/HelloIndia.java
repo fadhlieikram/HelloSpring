@@ -1,8 +1,9 @@
 package com.tutorialspoint;
 
-public class HelloWorld {
+public class HelloIndia {
 	private String message1;
 	private String message2;
+	private String message3;
 
 	public void setMessage1(String message1) {
 		this.message1 = message1;
@@ -20,11 +21,19 @@ public class HelloWorld {
 		System.out.println("Your message2 : " + message2);
 	}
 	
+	public void setMessage3(String message3) {
+		this.message3 = message3;
+	}
+	
+	public void getMessage3() {
+		System.out.println("Your message3 : " + message3);
+	}
+	
 	public void init(){
-		System.out.println("Bean is going through init.");
+		System.out.println("Bean India is going through init.");
 	}
 	
 	public void destroy(){
-		System.out.println("Bean will destroy now.");
+		System.out.println("Bean India will destroy now.");
 	}
 }
